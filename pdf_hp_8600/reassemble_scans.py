@@ -16,7 +16,7 @@ class reassemble_scans(object):
         self.dir_to_search=directory_for_scans
         self.logging = daiquiri.getLogger(__name__)
 
-    @staticmethod
+
     def help(self):
         message=\
 """
@@ -42,6 +42,7 @@ This script will make the new_document have pages in the order of (1,2,3,4,....)
 
 """
         print(""+message)
+        return message
 
 
     def find_finds(self,dir=None):
