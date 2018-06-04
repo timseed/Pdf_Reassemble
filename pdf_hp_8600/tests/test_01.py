@@ -28,5 +28,7 @@ def test_020():
     yield Tester(), True, rs_obj.check_2_scans(), "Check 2 files in directory"
     rs_obj.reassemble(where_are_we+"/new.pdf")
     yield Tester(), True, exists(where_are_we+"/new.pdf"), "New pdf Created"
+    yield Tester(), str, type(rs_obj.help()), "Help Function returns a string"
+
 
 
